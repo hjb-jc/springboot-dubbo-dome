@@ -1,0 +1,59 @@
+package com.gk.entity;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private long id;
+    private String userName;
+    private int age;
+    private String hobby;
+
+    public User(long id, String userName, int age, String hobby) {
+        this.id = id;
+        this.userName = userName;
+        this.age = age;
+        this.hobby = hobby;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", age=" + age +
+                ", hobby='" + hobby + '\'' +
+                '}';
+    }
+}
